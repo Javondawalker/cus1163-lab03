@@ -379,7 +379,7 @@ Choose 2: multiple pairs → sums 15 and 40
 1.fork() memory: Child gets its own address space that begins as a copy of the parent using copy-on-write; pages are duplicated only when written.
 2.Close unused pipe ends: So the peer can see EOF; otherwise one side may block forever.
 3.Zombies & wait(): A zombie is a finished child not yet waited on. wait()/waitpid() reaps it and frees the process table entry.
-Parent/child & orphans: Kernel tracks PPID. If a parent dies, children are adopted by PID 1 (init/systemd), which reaps them.
+4.Parent/child & orphans: Kernel tracks PPID. If a parent dies, children are adopted by PID 1 (init/systemd), which reaps them.
 
 Comfortability (0–5): 2
 Completeness (0–5): 5
