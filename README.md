@@ -1,4 +1,4 @@
-# Lab 3: Basic Process Management and IPC
+<img width="1123" height="729" alt="SC 2" src="https://github.com/user-attachments/assets/f6239c87-8a3d-4a30-aedf-f34977454126" /># Lab 3: Basic Process Management and IPC
 
 #### Learning Objectives
 
@@ -368,3 +368,20 @@ gcc -Wall -Wextra -o lab3 main.c process_manager.c
 
 Choose 1: basic producer–consumer demo → final sum = 15
 Choose 2: multiple pairs → sums 15 and 40
+
+<img width="1207" height="797" alt="SC 1" src="https://github.com/user-attachments/assets/5f22a0c9-e736-4ab2-9981-6e78fa8aa524" />
+<img width="1123" height="729" alt="SC 2" src="https://github.com/user-attachments/assets/ba612c72-5d25-4a39-8b72-cc36af213fac" />
+<img width="1204" height="799" alt="SC 3" src="https://github.com/user-attachments/assets/3ecd5361-b41d-4cac-997b-859df6313208" />
+<img width="1204" height="792" alt="SC 4 " src="https://github.com/user-attachments/assets/50b17bfa-42a9-4150-a937-d0bc568a8a5d" />
+
+
+
+1.fork() memory: Child gets its own address space that begins as a copy of the parent using copy-on-write; pages are duplicated only when written.
+2.Close unused pipe ends: So the peer can see EOF; otherwise one side may block forever.
+3.Zombies & wait(): A zombie is a finished child not yet waited on. wait()/waitpid() reaps it and frees the process table entry.
+Parent/child & orphans: Kernel tracks PPID. If a parent dies, children are adopted by PID 1 (init/systemd), which reaps them.
+
+Comfortability (0–5): 2
+Completeness (0–5): 5
+A win: I completed the file after having a lot of issues with it 
+https://github.com/Javondawalker/cus1163-lab03
