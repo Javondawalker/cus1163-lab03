@@ -360,3 +360,11 @@ Include:
 - Test that both menu options work correctly
 - Verify no zombie processes remain (all children properly waited for)
 - Ensure predictable output with sequential numbers
+
+- How to Build & Run
+
+gcc -Wall -Wextra -o lab3 main.c process_manager.c
+./lab3
+
+Choose 1: basic producer–consumer demo → final sum = 15
+Choose 2: multiple pairs → sums 15 and 40
