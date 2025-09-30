@@ -374,7 +374,8 @@ Choose 2: multiple pairs → sums 15 and 40
 <img width="1204" height="799" alt="SC 3" src="https://github.com/user-attachments/assets/3ecd5361-b41d-4cac-997b-859df6313208" />
 <img width="1204" height="792" alt="SC 4 " src="https://github.com/user-attachments/assets/50b17bfa-42a9-4150-a937-d0bc568a8a5d" />
 
-
+Zombie C heck : No lines  
+<img width="614" height="369" alt="Screenshot 2025-09-30 at 3 37 28 PM" src="https://github.com/user-attachments/assets/88486383-d027-4c96-a686-a039f995e0ca" />
 
 1.fork() memory: Child gets its own address space that begins as a copy of the parent using copy-on-write; pages are duplicated only when written.
 2.Close unused pipe ends: So the peer can see EOF; otherwise one side may block forever.
